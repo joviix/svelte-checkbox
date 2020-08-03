@@ -136,13 +136,12 @@
 </style>
 
 <div
-  {id}
   bind:this={self}
   class="checkbox {$$props.class}"
   class:-changeBg={changeBg}
   class:-checked={checked || !canChange}
   style="width: {size};height: {size};">
-  <input type="checkbox" on:change={handleChange} {name} />
+  <input type="checkbox" on:change={handleChange} {id} {name} />
   <svg class="checkbox__svg" preserveAspectRatio="none" viewBox="0 0 100 100">
     <rect class="checkbox__border" rx="15%" />
     <rect class="checkbox__border -active" style={borderStyle} rx="15%" />

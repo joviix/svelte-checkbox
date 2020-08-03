@@ -1,5 +1,5 @@
 <script>
-  import Checkbox from "svelte-checkbox";
+  import Checkbox from "../../Checkbox.svelte";
 
   let checked = false;
   let size = 3;
@@ -47,9 +47,11 @@
       class="main__checkbox"
       size="{size}rem"
       bind:checked
+      id="inputId"
       name="inputName"
       secondaryColor="rgba(1, 50, 67,0.2)"
       primaryColor="rgb(77, 5, 232)" />
+      <label for="inputId">Label..</label>
     <Checkbox
       class="main__checkbox"
       size="{size}rem"
