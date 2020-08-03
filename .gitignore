@@ -1,5 +1,7 @@
 /node_modules/
+/dist/
 /public/build/
+
 
 svelte-checkbox.gif
 svelte-checkbox.mp4

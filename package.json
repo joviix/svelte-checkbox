@@ -3,10 +3,12 @@
   "version": "1.0.0-beta.9",
   "description": "A <Checkbox> component for Svelte",
   "svelte": "Checkbox.svelte",
-  "module": "index.mjs",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
-    "demo": "cd playground && yarn dev"
+    "demo": "cd playground && yarn dev",
+    "build": "rollup -c",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^6.0.0",
